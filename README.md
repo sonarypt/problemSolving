@@ -1,3 +1,5 @@
-- [X] Project Euler
 - [X] scripts to screenshot problems from Project Euler and Codeforces
-- [X] Try2Decrypt
+- [X] [Project Euler](https://projecteuler.net/)
+- [X] [Try2Decrypt](https://www.trytodecrypt.com/)
+- [ ] [Rosalind](http://rosalind.info/problems/locations/)
+- [ ] [ProgrammingPraxis](https://programmingpraxis.com/)

@@ -21,7 +21,7 @@ fn is_pentagon(n: u32) -> bool {
    } else {
       return false;
    }
-
+   
    // if pentagon(id) == n {
    //    return true;
    // } else {
@@ -31,21 +31,20 @@ fn is_pentagon(n: u32) -> bool {
 
 fn main() {
    let mut rec: u32 = 0;
-   for i in 1..(10_u32.pow(3)) {
-      for j in 1..i {
-         println!("{}, {}", i, j);
-         // let pi = pentagon(i) as u32;
-         // let pj = pentagon(j) as u32;
-         // println!(pi);
-         // let s: u32 = pi + pj;
-         // let d: u32 = pi - pj;
-         // println!("good pair: {} {} with sum {} and diff {}", pi, pj, s, d);
-         // if is_pentagon(s) && is_pentagon(d) {
-         //    println!("good pair: {} {} with sum {} and diff {}", pi, pj, s, d);
-         //    if rec == 0 || d < rec {
-         //       rec = d;
-         //    }
-         // }
+   for ii in 1..(10_i32.pow(2)) {
+      for jj in 1..ii {
+         let i = ii as u32;
+         let j = jj as u32;
+         let pi = pentagon(i) as u32;
+         let pj = pentagon(j) as u32;
+         let s: u32 = pi + pj;
+         let d: u32 = pi - pj;
+         if is_pentagon(s) && is_pentagon(d) {
+            println!("good pair: {} {} with sum {} and diff {}", pi, pj, s, d);
+            if rec == 0 || d < rec {
+               rec = d;
+            }
+         }
       }
    }
 }
