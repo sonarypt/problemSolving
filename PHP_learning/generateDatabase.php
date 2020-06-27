@@ -41,5 +41,7 @@ for($i = 1; $i<=50; $i++) {
    insert_randomly($conn, $table_name);
 }
 
+mysqli_close($conn);
+
 ?>
 
