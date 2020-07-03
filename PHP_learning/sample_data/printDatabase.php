@@ -1,6 +1,6 @@
 <?php
 
-include("./secret.php");
+include("../secret.php");
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 

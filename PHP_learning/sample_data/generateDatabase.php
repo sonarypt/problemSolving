@@ -37,7 +37,7 @@ function insert_randomly($conn, $table_name) {
 }
 
 // create next 100 samples
-for($i = 1; $i<=50; $i++) {
+for($i = 1; $i<=5; $i++) {
    insert_randomly($conn, $table_name);
 }
 
